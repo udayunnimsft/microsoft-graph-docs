@@ -53,6 +53,7 @@ For more information about working with groups and members in teams, see [Use th
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
+|teamClassSettings|[teamClassSettings](teamclasssettings.md) | Settings to configure if we can send emails to parents/guardians of students. This setting is optional, and will only show up for Teams of type Class. |
 
 ## Relationships
 
@@ -94,7 +95,32 @@ The following is a JSON representation of the resource.
 }
 
 ```
+If the Team is of type class, it will also have the class settings property on the Team.
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.team",
+  "baseType": "microsoft.graph.entity"
+}-->
+
+```json
+{  
+  "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
+  "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "string",
+  "isArchived": false,
+  "webUrl": "string (URL)",
+  "displayName": "string",
+  "description": "string",
+  "classification": "string",
+  "specialization": "string",
+  "visibility": "string",
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
+}
+
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
