@@ -53,6 +53,7 @@ For more information about working with groups and members in teams, see [Use th
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
+|teamClassSettings|[teamClassSettings](teamclasssettings.md) |Configure settings of a class. Available only when the team represents a *Class*.|
 
 ## Relationships
 
@@ -69,7 +70,7 @@ For more information about working with groups and members in teams, see [Use th
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource. If the team is of type *Class*, there is a classSettings property on the team.
 
 <!-- {
   "blockType": "resource",
@@ -90,7 +91,8 @@ The following is a JSON representation of the resource.
   "description": "string",
   "classification": "string",
   "specialization": "string",
-  "visibility": "string"
+  "visibility": "string",
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
 
 ```

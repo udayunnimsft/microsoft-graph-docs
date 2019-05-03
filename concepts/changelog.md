@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2019
 
+### Class Settings
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [classSettings](/api-reference/beta/resources/teamclasssettings.md) property to [Team](/api-reference/beta/resources/team.md) resource that allows callers to get settings specific to a Team of type Class.|
+
 ### Risky users API
 
 | **Change type** | **Version**   | **Description**                          |
