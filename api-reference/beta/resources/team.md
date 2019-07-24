@@ -70,7 +70,9 @@ For more information about working with groups and members in teams, see [Use th
 
 ## JSON representation
 
-The following is a JSON representation of the resource. If the team is of type *Class*, there is a classSettings property on the team.
+The following is a JSON representation of the resource. 
+
+>**Note:** If the team is of type *Class*, there is a **classSettings** property on the team.
 
 <!-- {
   "blockType": "resource",
