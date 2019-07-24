@@ -49,6 +49,8 @@ If successful, this method returns a `202 Accepted` response code. It does not r
 
 ## Example
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_exportpersonaldata"
@@ -62,19 +64,27 @@ Content-length: 48
   "storageLocation": "storageLocation-value"
 }
 ```
-##### Response
-
-```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-exportpersonaldata-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+##### Response
+
+```http
 {
   Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
@@ -99,7 +109,5 @@ HTTP/1.1 202 Accepted
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

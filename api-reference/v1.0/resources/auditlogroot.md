@@ -27,8 +27,8 @@ None.
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|directoryAudits|[directoryAudit](directoryAudit.md) collection| Read-only. Nullable.|
-|signIns|[signIn](signIn.md) collection| Read-only. Nullable.|
+|directoryAudits|[directoryAudit](directoryaudit.md) collection| Read-only. Nullable.|
+|signIns|[signIn](signin.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
@@ -48,6 +48,8 @@ Here is a JSON representation of the resource.
 
 ## Example
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_auditLogs"
@@ -55,6 +57,24 @@ Here is a JSON representation of the resource.
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-auditlogs-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- {
   "blockType": "response",
@@ -76,5 +96,7 @@ Content-type: application/json
   "description": "auditLogRoot resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->
